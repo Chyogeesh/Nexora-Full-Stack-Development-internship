@@ -1,0 +1,11 @@
+import axios from 'axios';
+
+const api = axios.create({
+  baseURL: 'http://localhost:5000/api', // Match your backend port
+});
+
+export const getProducts = () => api.get('/products');
+export const getCart = () => api.get('/cart');
+export const addToCart = (productId, qty) => api.post('/cart', { productId, qty });
+export const removeFromCart = (itemId) => api.delete(`/cart/${itemId}`);
+export const checkout = (cartItems, customerInfo) => api.post('/checkout', { cartItems, customerInfo });
