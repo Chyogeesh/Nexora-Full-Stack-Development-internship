@@ -1,0 +1,19 @@
+vibe-commerce-cart/
+├── backend/
+│   ├── node_modules/
+│   ├── src/
+│   │   ├── models/        # e.g., Product.js, Cart.js (for DB schema/models)
+│   │   ├── controllers/   # e.g., productController.js, cartController.js
+│   │   ├── routes/        # e.g., productRoutes.js, cartRoutes.js
+│   │   └── server.js      # Main Express app setup
+│   ├── package.json
+│   └── .env               # For DB connection string, port, etc.
+└── frontend/
+    ├── node_modules/
+    ├── src/
+    │   ├── components/    # e.g., ProductCard.jsx, CartItem.jsx, CheckoutModal.jsx
+    │   ├── pages/         # e.g., ProductsPage.jsx, CartPage.jsx
+    │   ├── services/      # e.g., api.js (Axios setup)
+    │   └── App.jsx        # Main component/Router setup
+    ├── package.json
+    └── README.md          # Frontend setup instructions
